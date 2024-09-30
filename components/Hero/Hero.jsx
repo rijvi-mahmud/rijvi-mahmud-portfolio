@@ -43,28 +43,35 @@ const Hero = () => {
 						<div className="flex flex-col gap-6 md:gap-8">
 							<div className="flex items-center">
 								<DropdownMenu modal={false}>
-									<DropdownMenuTrigger>Open</DropdownMenuTrigger>
+									<DropdownMenuTrigger>
+										<Button
+											variant="outline"
+											className="rounded-l-full md:rounded-l-xl md:rounded-r-none  w-40 py-6"
+											asChild
+										>
+											<span>
+												<PaperPlaneIcon className="size-4 mr-2" />
+												Contact me
+											</span>
+										</Button>
+									</DropdownMenuTrigger>
 									<DropdownMenuContent
 										className={
-											'bg-neutral-900 text-neutral-50 shadow hover:bg-neutral-900'
+											'bg-neutral-900 text-neutral-50 shadow hover:bg-neutral-900 py-2'
 										}
 									>
-										<DropdownMenuItem>Profile</DropdownMenuItem>
-										<DropdownMenuItem>Billing</DropdownMenuItem>
-										<DropdownMenuItem>Team</DropdownMenuItem>
-										<DropdownMenuItem>Subscription</DropdownMenuItem>
+										<DropdownMenuItem asChild>
+											<Link href="https://wa.me/01784781272">Whatsapp</Link>
+										</DropdownMenuItem>
+										<DropdownMenuItem asChild>
+											<Link href="skype:live:rijvimahmud">Skype</Link>
+										</DropdownMenuItem>
+										<DropdownMenuItem asChild>
+											<Link href="mailto:rijvimahmudd@gmail.com">Email</Link>
+										</DropdownMenuItem>
 									</DropdownMenuContent>
 								</DropdownMenu>
-								<Button
-									variant="outline"
-									className="rounded-l-full md:rounded-l-xl md:rounded-r-none  w-40 py-6"
-									asChild
-								>
-									<Link href="/#contact">
-										<PaperPlaneIcon className="size-4 mr-2" />
-										Contact me
-									</Link>
-								</Button>
+
 								<Button
 									variant="outline"
 									className="rounded-r-full md:rounded-r-xl md:rounded-l-none text-base w-40 py-6"
