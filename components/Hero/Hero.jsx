@@ -61,7 +61,7 @@ const Hero = () => {
 										}
 									>
 										<DropdownMenuItem asChild>
-											<Link href="https://wa.me/01784781272">Whatsapp</Link>
+											<Link href="https://wa.me/+8801784781272">Whatsapp</Link>
 										</DropdownMenuItem>
 										<DropdownMenuItem asChild>
 											<Link href="skype:live:rijvimahmud">Skype</Link>
