@@ -1,8 +1,8 @@
 const projects = [
     {
-        name: "Clean Youtube",
+        name: "Hallochef - Food Delivery service for restaurants",
         description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
-        icon: "https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_1280.png",
+        icon: "/hallochef-landing-page.jpeg",
         category: "Frontend/Api intg.",
         links:{
             github: "https://github.com/rijvimahmudd/clean-youtube",
@@ -10,6 +10,17 @@ const projects = [
         } ,
         type: "Featured",
         priority: "1",
+    },
+    {
+        name: "Clean Youtube",
+        description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
+        icon: "/hallochef-landing-page.jpeg",
+        category: "Frontend/Api intg.",
+        links:{
+            github: "https://github.com/rijvimahmudd/clean-youtube",
+            live: "https://clean-youtube-theta.vercel.app/"
+        } ,
+        type: "Featured",
     },
     {
         name: "Time Track Zone",

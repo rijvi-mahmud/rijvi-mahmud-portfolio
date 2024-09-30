@@ -1,15 +1,11 @@
-import { TbBrandCpp, TbBrandNextjs } from "react-icons/tb";
-import { RiReactjsFill, RiBootstrapFill, RiJavascriptFill } from "react-icons/ri";
-import { SiTailwindcss, SiAntdesign, SiStrapi, SiMongodb, SiExpress, SiStorybook, SiVercel, SiFigma, SiTypescript } from "react-icons/si";
 import { FaGitAlt, FaNodeJs } from "react-icons/fa";
+import { RiBootstrapFill, RiReactjsFill } from "react-icons/ri";
+import { SiAntdesign, SiExpress, SiFigma, SiMongodb, SiStorybook, SiStrapi, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
+import { TbBrandCpp, TbBrandFramerMotion, TbBrandNextjs } from "react-icons/tb";
 
 
 const skills = [
-    {
-        name: "JavaScript",
-        type: "Language",
-        icon: RiJavascriptFill
-    },
+   
     {
         name: "React JS",
         type: "JS Library",
@@ -17,13 +13,28 @@ const skills = [
     },
     {
         name: "Next JS",
-        type: "JS Framework",
+        type: "ReactJS Framework",
         icon: TbBrandNextjs 
+    },
+    {
+        name: "Framer Motion",
+        type: "Animation Library",
+        icon: TbBrandFramerMotion
     },
     {
         name: "Tailwind CSS",
         type: "CSS Framework",
         icon: SiTailwindcss 
+    },
+    {
+        name: "Node JS",
+        type: "JS Runtime",
+        icon: FaNodeJs
+    },
+    {
+        name: "Express JS",
+        type: "NodeJS web framework",
+        icon: SiExpress
     },
     {
         name: "Bootstrap",
@@ -39,11 +50,6 @@ const skills = [
         name: "Git",
         type: "Version Control",
         icon: FaGitAlt 
-    },
-    {
-        name: "Node JS",
-        type: "JS Runtime",
-        icon: FaNodeJs
     },
     {
         name: "Strapi",
@@ -84,6 +90,11 @@ const skills = [
         name: "C++",
         type: "Language",
         icon: TbBrandCpp
+    },
+    {
+        name: "Framer Motion",
+        type: "Animation Library",
+        icon: TbBrandFramerMotion
     }
 ]
 

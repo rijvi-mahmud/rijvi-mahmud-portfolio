@@ -4,7 +4,7 @@ import { GitHubLogoIcon, LinkedInLogoIcon} from '@radix-ui/react-icons'
 const socialLinks = [
     {
         name: "Github",
-        href: "https://github.com/rijvimahmudd",
+        href: "https://github.com/rijvi-mahmud",
         icon: GitHubLogoIcon,
     },
     {

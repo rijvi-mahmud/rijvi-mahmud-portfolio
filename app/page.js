@@ -7,10 +7,10 @@ export default function Home() {
   
   return (
     <>
-    <section className="md:px-20 w-full">
+    <section className="md:px-20 w-full space-y-7">
         <Hero />
-        <Skills/>
         <Projects/>
+        <Skills/>
         <Services />
     </section>
     </>
