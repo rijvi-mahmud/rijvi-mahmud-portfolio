@@ -7,6 +7,9 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { EyeOpenIcon, PaperPlaneIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
+import { FaWhatsapp } from 'react-icons/fa';
+import { MdOutlineEmail } from 'react-icons/md';
+import { SlSocialSkype } from 'react-icons/sl';
 import SocialIcons from '../SocialIcons';
 import HeroImage from './HeroImage';
 
@@ -21,7 +24,7 @@ const Hero = () => {
 							<h1 className="text-xl md:text-2xl font-mono text-slate-100 font-semibold tracking-wide">
 								Welcome! I&apos;m
 							</h1>
-							<h1 className="text-5xl md:text-7xl font-extrabold font-[nunito] tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-yellow-200 py-1">
+							<h1 className="text-5xl md:text-7xl font-extrabold font-nunito tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-yellow-200 py-1">
 								Rijvi
 							</h1>
 						</div>
@@ -61,13 +64,31 @@ const Hero = () => {
 										}
 									>
 										<DropdownMenuItem asChild>
-											<Link href="https://wa.me/+8801784781272">Whatsapp</Link>
+											<Link
+												href="https://wa.me/+8801784781272"
+												className="text-slate-100 flex items-center gap-2 cursor-pointer hover:underline"
+											>
+												<FaWhatsapp />
+												Whatsapp
+											</Link>
 										</DropdownMenuItem>
 										<DropdownMenuItem asChild>
-											<Link href="skype:live:rijvimahmud">Skype</Link>
+											<Link
+												href="skype:live:rijvimahmud"
+												className="text-slate-100 flex items-center gap-2 cursor-pointer hover:underline"
+											>
+												<SlSocialSkype />
+												Skype
+											</Link>
 										</DropdownMenuItem>
 										<DropdownMenuItem asChild>
-											<Link href="mailto:rijvimahmudd@gmail.com">Email</Link>
+											<Link
+												href="mailto:rijvimahmudd@gmail.com"
+												className="text-slate-100 flex items-center gap-2 cursor-pointer hover:underline"
+											>
+												<MdOutlineEmail />
+												Email
+											</Link>
 										</DropdownMenuItem>
 									</DropdownMenuContent>
 								</DropdownMenu>

@@ -1,15 +1,26 @@
 const projects = [
     {
         name: "Hallochef - Food Delivery service for restaurants",
-        description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
+        description: "Hallochef is a food delivery system primarily operate from Bangkok, Thailand. Different continental food is available on hallochef",
         icon: "/hallochef-landing-page.jpeg",
         category: "Frontend/Api intg.",
         links:{
-            github: "https://github.com/rijvimahmudd/clean-youtube",
-            live: "https://clean-youtube-theta.vercel.app/"
+            github: "",
+            live: "https://hallochefco.com/"
         } ,
         type: "Featured",
         priority: "1",
+    },
+    {
+        name: "Filmcutt - Video Editing Agency in Bangladesh",
+        description: "Filmcutt is specializing in editing business ads, 2D/3D videos, and both horizontal and vertical video formats.",
+        icon: "/filmcutt-landing-page.jpeg",
+        category: "Frontend/Api intg.",
+        links:{
+            github: "",
+            live: "https://filmcutt.cc"
+        } ,
+        type: "Featured",
     },
     {
         name: "Clean Youtube",
