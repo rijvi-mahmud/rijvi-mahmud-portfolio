@@ -1,4 +1,5 @@
 'use client';
+import { formatNameForUrl } from '@/lib/utils';
 import { ArrowRightIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -78,10 +79,7 @@ export default function ProjectCard({
 				</div>
 				<Button variant="outline" className="" asChild>
 					<Link
-						href={`/projects/${title
-							.toLowerCase()
-							.split(' ')
-							.join('-')}-${index}`}
+						href={`/projects/${formatNameForUrl(title)}`}
 						className="ml-auto dark:bg-transparent dark:text-zinc-50"
 					>
 						<ArrowRightIcon className="size-4 mr-2" />

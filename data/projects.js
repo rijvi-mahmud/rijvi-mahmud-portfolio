@@ -23,6 +23,18 @@ const projects = [
         type: "Featured",
     },
     {
+        name: "Hallochef Co - Your trusted food delivery partner",
+        description: "This landing page is for promoting their mobile app for android and ios. And also it is a landing page for Hallochef.",
+        icon: "/hallochef-app-landing-page.jpeg",
+        category: "Frontend/Api intg.",
+        links:{
+            github: "",
+            live: "https://hallochef-landing-page.vercel.app/"
+        } ,
+        type: "Featured",
+        priority: "1",
+    },
+    {
         name: "Clean Youtube",
         description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
         icon: "/hallochef-landing-page.jpeg",

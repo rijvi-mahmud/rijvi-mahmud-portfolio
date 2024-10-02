@@ -32,7 +32,7 @@ const Hero = () => {
 						<div className="flex flex-col gap-3 md:gap-5">
 							<div>
 								<h3 className="text-2xl text-slate-100 font-bold">
-									I build web apps!
+									I build API&apos;s & web apps!
 								</h3>
 							</div>
 							<div>
