@@ -5,13 +5,26 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { cn } from '@/lib/utils';
 import { EyeOpenIcon, PaperPlaneIcon } from '@radix-ui/react-icons';
+import localFont from 'next/font/local';
 import Link from 'next/link';
 import { FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import { SlSocialSkype } from 'react-icons/sl';
 import SocialIcons from '../SocialIcons';
 import HeroImage from './HeroImage';
+
+const nunito = localFont({
+	src: [
+		{
+			path: '../../assets/font/Nunito-ExtraBold.ttf',
+			weight: '800',
+			style: 'bold',
+		},
+	],
+	variable: '--font-nunito',
+});
 
 const Hero = () => {
 	return (
@@ -24,7 +37,12 @@ const Hero = () => {
 							<h1 className="text-xl md:text-2xl font-mono text-slate-100 font-semibold tracking-wide">
 								Welcome! I&apos;m
 							</h1>
-							<h1 className="text-5xl md:text-7xl font-extrabold font-nunito tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-yellow-200 py-1">
+							<h1
+								className={cn(
+									`text-5xl md:text-7xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-yellow-200 py-1`,
+									nunito.className
+								)}
+							>
 								Rijvi
 							</h1>
 						</div>
