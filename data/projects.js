@@ -23,8 +23,19 @@ const projects = [
         type: "Featured",
     },
     {
+        name: "NextGen - Best NFT Marketplace for Web 3.0 in world",
+        description: "This project is just cloning from figma to react and tailwindcss. it's a static website.",
+        icon: "/nft-landing-page.jpeg",
+        category: "Frontend/Api intg.",
+        links:{
+            github: "https://github.com/rijvimahmudd/NextGen-Free-NFT-Marketplace",
+            live: "https://next-gen-free-nft-marketplace.vercel.app/"
+        } ,
+        type: "Featured",
+    },
+    {
         name: "Hallochef Co - Your trusted food delivery partner",
-        description: "This landing page is for promoting their mobile app for android and ios. And also it is a landing page for Hallochef.",
+        description: "This website is for promoting hallochef's mobile app for android and ios. And also it is a landing page for Hallochef.",
         icon: "/hallochef-app-landing-page.jpeg",
         category: "Frontend/Api intg.",
         links:{
@@ -32,11 +43,10 @@ const projects = [
             live: "https://hallochef-landing-page.vercel.app/"
         } ,
         type: "Featured",
-        priority: "1",
     },
     {
-        name: "Clean Youtube",
-        description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
+        name: "Clean Youtube - distraction free youtube for productive people",
+        description: "",
         icon: "/hallochef-landing-page.jpeg",
         category: "Frontend/Api intg.",
         links:{
@@ -46,9 +56,9 @@ const projects = [
         type: "Featured",
     },
     {
-        name: "Time Track Zone",
-        description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
-        icon: "https://cdn.pixabay.com/photo/2012/04/01/17/31/hourglass-23654_1280.png",
+        name: "Time Track Zone - Compare your time with others",
+        description: "",
+        icon: "/track-zone-landing-page.jpeg",
         category: "Frontend",
         links:{
             github: "https://github.com/rijvimahmudd/track-zone",
@@ -57,8 +67,8 @@ const projects = [
         type: "Featured",
     }, 
     {
-        name: "Learning management System",
-        description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
+        name: "Learning management System - Backend server",
+        description: "",
         icon: "https://cdn.pixabay.com/photo/2023/02/09/18/42/podcast-7779510_1280.png",
         category: "Backend",
         links: {
@@ -67,28 +77,7 @@ const projects = [
         },
         type: "Featured",
     },
-    {
-        name: "Social Media",
-        description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
-        icon: "https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_1280.png",
-        category: "Backend",
-        links: {
-            github: "https://github.com/rijvimahmudd/social-media",
-            live: "https://social-media-omega.vercel.app/"
-    },
-        type: "Featured",
-    },
-    {
-        name: "Social Media",
-        description: "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
-        icon: "https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_1280.png",
-        category: "Backend",
-        links: {
-            github: "https://github.com/rijvimahmudd/social-media",
-            live: "https://social-media-omega.vercel.app/"
-    },
-        type: "Featured",
-    }
+
 ]
 
 export default projects
