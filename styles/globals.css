@@ -36,7 +36,7 @@
 
 @layer utilities {
 	.font-nunito {
-		font-family: 'Nunito', sans-serif;
+		font-family: 'Nunito', 'quicksand', 'open sans', sans-serif;
 		font-optical-sizing: auto;
 		font-weight: 800;
 		font-style: normal;
