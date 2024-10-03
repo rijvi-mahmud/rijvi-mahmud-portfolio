@@ -37,6 +37,9 @@
 @layer utilities {
 	.font-nunito {
 		font-family: 'Nunito', sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 800;
+		font-style: normal;
 	}
 	.dark-gradient {
 		@apply dark:bg-green-900/5 bg-slate-600;
