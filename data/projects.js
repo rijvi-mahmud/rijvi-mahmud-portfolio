@@ -46,8 +46,8 @@ const projects = [
     },
     {
         name: "Clean Youtube - distraction free youtube for productive people",
-        description: "",
-        icon: "/hallochef-landing-page.jpeg",
+        description: "Clean youtube is a saas product for productivity. Keeps you productive while you learn something new from youtube.",
+        icon: "/clean-youtube-landing-page.jpeg",
         category: "Frontend/Api intg.",
         links:{
             github: "https://github.com/rijvimahmudd/clean-youtube",
@@ -57,7 +57,7 @@ const projects = [
     },
     {
         name: "Time Track Zone - Compare your time with others",
-        description: "",
+        description: "You can compare your current time with any other timezone. You can also track your time in any timezone.",
         icon: "/track-zone-landing-page.jpeg",
         category: "Frontend",
         links:{
@@ -68,11 +68,11 @@ const projects = [
     }, 
     {
         name: "Learning management System - Backend server",
-        description: "",
+        description: "A Lms backend system built with expressjs, typescript, redis and mongodb.",
         icon: "https://cdn.pixabay.com/photo/2023/02/09/18/42/podcast-7779510_1280.png",
         category: "Backend",
         links: {
-            github: "https://github.com/rijvimahmudd/eat-cake",
+            github: "https://github.com/rijvimahmudd/LMS",
             live: "https://eat-cake.vercel.app/"
         },
         type: "Featured",
