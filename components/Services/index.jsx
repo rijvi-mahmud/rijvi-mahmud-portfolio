@@ -18,7 +18,7 @@ const Services = () => {
 							)}
 						>
 							<CardHeader className="text-2xl md:text-xl p-0 w-full text-green-100 space-y-3">
-								<CardTitle className="leading-snug text-center text-base md:text-xl mx-auto w-[80%] md:w-full">
+								<CardTitle className="leading-snug text-center text-base md:text-xl mx-auto w-[80%] md:w-full md:mx-0">
 									{service.title}
 								</CardTitle>
 								<CardDescription className="text-slate-200 w-full text-center">
