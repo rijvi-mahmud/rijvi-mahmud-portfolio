@@ -4,15 +4,24 @@ import navItems from '@/data/menu';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
 	const pathname = usePathname();
 	return (
 		<div className="sticky -top-2 h-24 sm:h-28 bg-gradient-to-b from-zinc-100 via-zinc-100/50 to-zinc-50/0 dark:bg-gradient-to-b dark:from-green-950/5 dark:via-green-950/5 dark:to-green-900/0 z-50 transition md:px-20">
 			<div className={cn('w-full text-zinc-400 px-8 md:px-20 pt-8')}>
-				<div className="flex items-center md:justify-between justify-center rounded-full py-4 backdrop-blur-lg dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit transition-all px-7 ">
+				<div className="flex items-center justify-between rounded-full py-4 backdrop-blur-lg dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit transition-all px-7 ">
 					<Logo />
-					<div className="none md:block">
+
+					<div className="none">
+						<Link
+							href="https://wa.me/+8801784781272"
+							target="_blank"
+							className="md:hidden"
+						>
+							<FaWhatsapp className="text-green-500 text-3xl" />
+						</Link>
 						<ul className="gap-8 hidden md:flex font-medium">
 							{navItems.map(item => (
 								<li key={item.href} className="relative">
