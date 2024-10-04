@@ -3,7 +3,7 @@ import { RiBootstrapFill, RiReactjsFill } from "react-icons/ri";
 import { SiAntdesign, SiExpress, SiFigma, SiMongodb, SiStorybook, SiStrapi, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 import { TbBrandCpp, TbBrandFramerMotion, TbBrandNextjs } from "react-icons/tb";
 
-
+import { SiRedux } from "react-icons/si";
 const skills = [
    
     {
@@ -15,6 +15,11 @@ const skills = [
         name: "Next JS",
         type: "ReactJS Framework",
         icon: TbBrandNextjs 
+    },
+    {
+        name: "Redux toolkit",
+        type: "State Management",
+        icon: SiRedux 
     },
     {
         name: "Framer Motion",
