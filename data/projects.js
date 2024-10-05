@@ -23,7 +23,7 @@ const projects = [
         type: "Featured",
     },
     {
-        name: "NextGen - Best NFT Marketplace for Web 3.0 in world",
+        name: "NextGen - Best NFT Marketplace for Web 3.0",
         description: "This project is just cloning from figma to react and tailwindcss. it's a static website.",
         icon: "/nft-landing-page.jpeg",
         category: "Frontend/Api intg.",

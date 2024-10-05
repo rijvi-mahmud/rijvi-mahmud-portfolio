@@ -1,6 +1,7 @@
 'use client';
 import projectsData from '@/data/projects';
 import { useEffect, useState } from 'react';
+import { Button } from '../ui/button';
 import SectionTitle from '../ui/sectionTitle';
 import ProjectCard from './ProjectCard';
 
@@ -37,12 +38,9 @@ const Projects = () => {
 			</div>
 			{visibleProjects < projects.length && (
 				<div className="flex justify-center mt-8">
-					<button
-						className="bg-gradient-to-r from-green-500 to-yellow-300 text-black hover:bg-gradient-to-r hover:from-yellow-300 hover:to-green-500 font-medium py-2 px-4 rounded-full transition-all duration-500 ease-in-out bg-[length:200%_200%] hover:bg-[length:300%_300%] bg-left hover:bg-right"
-						onClick={showMoreProjects}
-					>
+					<Button variant="gradient-fill" onClick={showMoreProjects}>
 						Show More
-					</button>
+					</Button>
 				</div>
 			)}
 		</div>
