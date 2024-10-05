@@ -17,14 +17,14 @@ const Services = () => {
 								// i === 2 ? "grow-0": "grow"
 							)}
 						>
-							<CardHeader className="text-2xl md:text-xl p-0 w-full text-green-100 space-y-3">
+							<CardHeader className="text-2xl md:text-xl p-0 w-full text-green-100 space-y-4">
 								<CardTitle className="leading-snug text-center text-base md:text-xl mx-auto w-[88%] md:w-full md:mx-0">
 									{service.title} <br />
 									<span className="text-slate-200 text-base font-medium">
 										({service.subtitle})
 									</span>
 								</CardTitle>
-								<CardDescription className="text-gray-400 w-full text-center">
+								<CardDescription className="text-gray-400 w-full text-center text-sm">
 									{service.description}
 								</CardDescription>
 							</CardHeader>

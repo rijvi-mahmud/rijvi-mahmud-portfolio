@@ -11,7 +11,7 @@ const Footer = () => {
 			<div className="flex flex-col gap-10 md:flex-row md:justify-between items-stretch">
 				<div className="flex flex-col gap-6 basis-1/2">
 					<div>
-						<p className="text-justify text-zinc-100/90 text-[15px]">
+						<p className="text-zinc-100/90 text-[15px]">
 							Self-driven, focused, and dedicated Web Developer with 2+ years of
 							experience, including 1+ years of industrial experience. I am
 							passionate about programming, developing new products, and

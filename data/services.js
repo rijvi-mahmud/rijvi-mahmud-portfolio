@@ -4,21 +4,21 @@ export const services = [
         id:1,
         title:"Frontend",
         subtitle:"React/Next/Astro",
-        description:"Build performance optimized responsive and pixel-perfect ui website with seo friendly code.",
+        description:"Build fast, responsive, and pixel-perfect websites with SEO-friendly code for optimal performance.",
         icon: IoLogoReact
     },
     {
         id:2,
         title: "Backend",
         subtitle: "Node/Express/MongoDB",
-        description: "I build robust and scalable backend api with expressjs and mongodb.",
+        description: "Develop scalable and secure APIs using Express and MongoDB to power your web applications.",
         icon: IoBugSharp
     },
     {
         id:3,
         title: "Fullstack Development",
         subtitle: "MERN/NextJS",
-        description: "I build robust and scalable backend api with expressjs and mongodb.",
+        description: "Create full-stack applications with seamless integration between front & back-end technologies.",
         icon: IoBugSharp
     }
 ]
