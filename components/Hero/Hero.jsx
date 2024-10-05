@@ -13,6 +13,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import { SlSocialSkype } from 'react-icons/sl';
 import SocialIcons from '../SocialIcons';
+import { FlipWords } from '../ui/flip-words';
 import HeroImage from './HeroImage';
 
 const nunito = localFont({
@@ -50,7 +51,10 @@ const Hero = () => {
 						<div className="flex flex-col gap-3 md:gap-5">
 							<div>
 								<h3 className="text-2xl text-slate-100 font-bold">
-									I build API&apos;s & web apps!
+									I build
+									<FlipWords
+										words={['Pixel-Perfect UI', 'Web Apps', "Rest API's"]}
+									/>
 								</h3>
 							</div>
 							<div>
