@@ -19,9 +19,12 @@ const Services = () => {
 						>
 							<CardHeader className="text-2xl md:text-xl p-0 w-full text-green-100 space-y-3">
 								<CardTitle className="leading-snug text-center text-base md:text-xl mx-auto w-[88%] md:w-full md:mx-0">
-									{service.title}
+									{service.title} <br />
+									<span className="text-slate-200 text-base font-medium">
+										({service.subtitle})
+									</span>
 								</CardTitle>
-								<CardDescription className="text-slate-200 w-full text-center">
+								<CardDescription className="text-gray-400 w-full text-center">
 									{service.description}
 								</CardDescription>
 							</CardHeader>
