@@ -53,7 +53,7 @@ const Hero = () => {
 								<h3 className="text-2xl text-slate-100 font-bold">
 									I build
 									<FlipWords
-										words={['Pixel-Perfect UI', 'Web Apps', "Rest API's"]}
+										words={['Pixel Perfect UI', 'Web Apps', "Rest API's"]}
 									/>
 								</h3>
 							</div>
