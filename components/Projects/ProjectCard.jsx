@@ -52,7 +52,7 @@ export default function ProjectCard({
 	const [hovered, setHovered] = useState(null);
 	return (
 		<Card
-			className="bg-green-950/5 shadow-none border border-yellow-50/5 flex flex-col-reverse gap-0 cursor-pointer group hover:-translate-y-1 transition md:py-2 pb-2 relative"
+			className="bg-green-950/5 w-[330px] md:w-auto shadow-none border border-yellow-50/5 flex flex-col-reverse gap-0 cursor-pointer group hover:-translate-y-1 transition md:py-2 pb-2 relative"
 			onMouseOver={e => setHovered(true)}
 			onMouseLeave={e => setHovered(false)}
 		>
@@ -64,8 +64,8 @@ export default function ProjectCard({
 					{description}
 				</CardDescription>
 
-				<Carousel className="isolate pt-2" setApi={setApi} plugins={[]}>
-					<CarouselContent className="w-full -ml-4">
+				<Carousel className="isolate pt-2 w-full" setApi={setApi} plugins={[]}>
+					<CarouselContent className="-ml-4">
 						{techs.map((tech, i) => (
 							<CarouselItem key={i} className="basis-auto pl-4">
 								<Badge
@@ -78,8 +78,12 @@ export default function ProjectCard({
 							</CarouselItem>
 						))}
 					</CarouselContent>
-					{current > 1 && <CarouselPrevious className="left-0 z-10" />}
-					{current < count && <CarouselNext className="right-0 z-10" />}
+					{current > 1 && (
+						<CarouselPrevious className="left-0 z-10 hidden md:flex" />
+					)}
+					{current < count && (
+						<CarouselNext className="right-0 z-10 hidden md:flex" />
+					)}
 				</Carousel>
 			</CardHeader>
 			<CardContent className="isolate py-4 flex justify-between items-center relative">
