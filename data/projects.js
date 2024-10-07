@@ -1,6 +1,6 @@
 const projects = [
     {
-        name: "FridayMart - E-commerce platform for daily shopping (curr. Backend)",
+        name: "FridayMart - E-commerce platform for daily shopping",
         description: "Hallochef is a food delivery system primarily operate from Bangkok, Thailand. Different continental food is available on hallochef",
         icon: "/e-commerce.jpg",
         category: "Full Stack Development",
