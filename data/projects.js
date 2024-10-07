@@ -1,6 +1,6 @@
 const projects = [
     {
-        name: "FridayMart - E-commerce platform for daily shopping",
+        name: "FridayMart - E-commerce platform for daily shopping (curr. Backend)",
         description: "Hallochef is a food delivery system primarily operate from Bangkok, Thailand. Different continental food is available on hallochef",
         icon: "/e-commerce.jpg",
         category: "Full Stack Development",
@@ -10,6 +10,11 @@ const projects = [
         } ,
         type: "Featured",
         priority: "1",
+        techs:[
+            "Nodejs",
+            "Expressjs",
+            "MongoDB",
+        ]
     },
     {
         name: "Hallochef - Food Delivery service for restaurants",
@@ -21,17 +26,40 @@ const projects = [
             live: "https://hallochefco.com/"
         } ,
         type: "Featured",
+        techs:[
+            "React",
+            "Redux toolkit",
+            "RTK query",
+            "figma",
+            "Google maps api",
+            "Material UI",
+            "NodeJS",
+            "Api Integration",
+            "performance optimization",
+        ]
     },
     {
         name: "Filmcutt - Video Editing Agency in Bangladesh",
         description: "Filmcutt is specializing in editing business ads, 2D/3D videos, and both horizontal and vertical video formats.",
         icon: "/filmcutt-landing-page.jpeg",
-        category: "Frontend/Api intg.",
+        category: "Full Stack Development",
         links:{
             github: "",
             live: "https://filmcutt.cc"
         } ,
         type: "Featured",
+        techs:[
+            "NextJs",
+            "Supabase",
+            "Rest Api",
+            "Tailwindcss",
+            "Framer Motion",
+            "Vercel",
+            "UI/UX development",
+            "NodeJs",
+            "Api Integration",
+            "performance optimization",
+        ]
     },
     {
         name: "Hallochef Co - Your trusted food delivery partner",
@@ -43,6 +71,11 @@ const projects = [
             live: "https://hallochef-landing-page.vercel.app/"
         } ,
         type: "Featured",
+        techs:[
+            "NextJs",
+            'Tailwindcss',
+            "Figma",
+        ]
     },
     {
         name: "NextGen - Best NFT Marketplace for Web 3.0",

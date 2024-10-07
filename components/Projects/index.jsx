@@ -23,16 +23,16 @@ const Projects = () => {
 				<SectionTitle backgroundText="featured">Featured Projects</SectionTitle>
 			</div>
 			<div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:px-12">
-				{projects.slice(0, visibleProjects).map((project, index) => (
+				{projects.slice(0, visibleProjects).map(project => (
 					<ProjectCard
-						key={index}
-						index={index}
+						key={project.name}
 						title={project.name}
 						description={project.description}
 						icon={project.icon}
 						category={project.category}
 						githubLink={project.links.github}
 						liveLink={project.links.live}
+						techs={project.techs || []}
 					/>
 				))}
 			</div>

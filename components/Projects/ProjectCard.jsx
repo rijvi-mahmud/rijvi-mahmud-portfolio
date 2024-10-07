@@ -3,7 +3,7 @@ import { formatNameForUrl } from '@/lib/utils';
 import { ArrowRightIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RiExternalLinkFill } from 'react-icons/ri';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
@@ -15,6 +15,13 @@ import {
 	CardHeader,
 	CardTitle,
 } from '../ui/card';
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from '../ui/carousel';
 
 export default function ProjectCard({
 	title,
@@ -23,8 +30,25 @@ export default function ProjectCard({
 	category,
 	githubLink,
 	liveLink,
-	index,
+	techs = [],
 }) {
+	const [api, setApi] = useState();
+	const [current, setCurrent] = useState(0);
+	const [count, setCount] = useState(0);
+
+	useEffect(() => {
+		if (!api) {
+			return;
+		}
+
+		setCount(api.scrollSnapList().length);
+		setCurrent(api.selectedScrollSnap() + 1);
+
+		api.on('select', () => {
+			setCurrent(api.selectedScrollSnap() + 1);
+		});
+	}, [api]);
+
 	const [hovered, setHovered] = useState(null);
 	return (
 		<Card
@@ -32,13 +56,31 @@ export default function ProjectCard({
 			onMouseOver={e => setHovered(true)}
 			onMouseLeave={e => setHovered(false)}
 		>
-			<CardHeader className="pt-3">
+			<CardHeader className="pt-3 space-y-3">
 				<CardTitle className="capitalize leading-normal h-12">
 					{title}
 				</CardTitle>
 				<CardDescription className="line-clamp-2">
 					{description}
 				</CardDescription>
+
+				<Carousel className="isolate pt-2" setApi={setApi} plugins={[]}>
+					<CarouselContent className="w-full -ml-4">
+						{techs.map((tech, i) => (
+							<CarouselItem key={i} className="basis-auto pl-4">
+								<Badge
+									className={`
+										bg-slate-700/50 py-2
+									`}
+								>
+									{tech}
+								</Badge>
+							</CarouselItem>
+						))}
+					</CarouselContent>
+					{current > 1 && <CarouselPrevious className="left-0 z-10" />}
+					{current < count && <CarouselNext className="right-0 z-10" />}
+				</Carousel>
 			</CardHeader>
 			<CardContent className="isolate py-4 flex justify-between items-center relative">
 				<Image
