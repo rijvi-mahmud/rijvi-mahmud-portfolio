@@ -1,5 +1,17 @@
 const projects = [
     {
+        name: "FridayMart - E-commerce platform for daily shopping",
+        description: "Hallochef is a food delivery system primarily operate from Bangkok, Thailand. Different continental food is available on hallochef",
+        icon: "/e-commerce.jpg",
+        category: "Full Stack Development",
+        links:{
+            github: "",
+            live: "https://hallochefco.com/"
+        } ,
+        type: "Featured",
+        priority: "1",
+    },
+    {
         name: "Hallochef - Food Delivery service for restaurants",
         description: "Hallochef is a food delivery system primarily operate from Bangkok, Thailand. Different continental food is available on hallochef",
         icon: "/hallochef-landing-page.jpeg",
@@ -9,7 +21,6 @@ const projects = [
             live: "https://hallochefco.com/"
         } ,
         type: "Featured",
-        priority: "1",
     },
     {
         name: "Filmcutt - Video Editing Agency in Bangladesh",
@@ -19,17 +30,6 @@ const projects = [
         links:{
             github: "",
             live: "https://filmcutt.cc"
-        } ,
-        type: "Featured",
-    },
-    {
-        name: "NextGen - Best NFT Marketplace for Web 3.0",
-        description: "This project is just cloning from figma to react and tailwindcss. it's a static website.",
-        icon: "/nft-landing-page.jpeg",
-        category: "Frontend/Api intg.",
-        links:{
-            github: "https://github.com/rijvimahmudd/NextGen-Free-NFT-Marketplace",
-            live: "https://next-gen-free-nft-marketplace.vercel.app/"
         } ,
         type: "Featured",
     },
@@ -45,6 +45,17 @@ const projects = [
         type: "Featured",
     },
     {
+        name: "NextGen - Best NFT Marketplace for Web 3.0",
+        description: "This project is just cloning from figma to react and tailwindcss. it's a static website.",
+        icon: "/nft-landing-page.jpeg",
+        category: "Frontend/Api intg.",
+        links:{
+            github: "https://github.com/rijvimahmudd/NextGen-Free-NFT-Marketplace",
+            live: "https://next-gen-free-nft-marketplace.vercel.app/"
+        } ,
+        type: "",
+    },
+    {
         name: "Clean Youtube - distraction free youtube for productive people",
         description: "Clean youtube is a saas product for productivity. Keeps you productive while you learn something new from youtube.",
         icon: "/clean-youtube-landing-page.jpeg",
@@ -53,7 +64,7 @@ const projects = [
             github: "https://github.com/rijvimahmudd/clean-youtube",
             live: "https://clean-youtube-theta.vercel.app/"
         } ,
-        type: "Featured",
+        type: "",
     },
     {
         name: "Time Track Zone - Compare your time with others",
@@ -64,7 +75,7 @@ const projects = [
             github: "https://github.com/rijvimahmudd/track-zone",
             live: "https://track-zone-rouge.vercel.app/"
         },
-        type: "Featured",
+        type: "",
     }, 
     {
         name: "Learning management System - Backend server",
@@ -75,7 +86,7 @@ const projects = [
             github: "https://github.com/rijvimahmudd/LMS",
             live: "https://eat-cake.vercel.app/"
         },
-        type: "Featured",
+        type: "",
     },
 
 ]

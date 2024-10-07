@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { RiExternalLinkFill } from 'react-icons/ri';
+import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
 import {
 	Card,
@@ -39,10 +40,10 @@ export default function ProjectCard({
 					{description}
 				</CardDescription>
 			</CardHeader>
-			<CardContent className="py-4 flex justify-between items-center relative">
+			<CardContent className="isolate py-4 flex justify-between items-center relative">
 				<Image
 					src={icon}
-					className=" object-cover object-center h-[200px] w-full group-hover:scale-100 transition rounded-md"
+					className="-z-20 object-cover object-center h-[200px] w-full group-hover:scale-100 transition rounded-md"
 					alt="avatar"
 					height={300}
 					width={300}
@@ -51,6 +52,13 @@ export default function ProjectCard({
 					blurDataURL="/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII"
 					placeholder="blur"
 				/>
+				<Badge
+					className={
+						'absolute top-1 right-2.5 z-50 py-2 px-3 bg-green-900 rounded-none rounded-tl-xl rounded-br-xl shadow'
+					}
+				>
+					{category}
+				</Badge>
 			</CardContent>
 			<CardFooter className="pt-4 pb-3 -order-3">
 				<div className="space-x-2.5 md:space-x-4">

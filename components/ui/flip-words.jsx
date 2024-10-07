@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useCallback, useEffect, useState } from 'react';
 
-export const FlipWords = ({ words, duration = 3000, className }) => {
+export const FlipWords = ({ words, duration = 1000, className }) => {
 	const [currentWord, setCurrentWord] = useState(words[0]);
 	const [isAnimating, setIsAnimating] = useState(false);
 
