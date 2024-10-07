@@ -17,7 +17,7 @@ const projects = [
         ]
     },
     {
-        name: "Hallochef - Food Delivery service for restaurants",
+        name: "Hallochef Co - Food Delivery service for restaurants",
         description: "Hallochef is a food delivery system primarily operate from Bangkok, Thailand. Different continental food is available on hallochef",
         icon: "/hallochef-landing-page.jpeg",
         category: "Frontend/Api intg.",
@@ -39,7 +39,7 @@ const projects = [
         ]
     },
     {
-        name: "Filmcutt - Video Editing Agency in Bangladesh",
+        name: "Filmcutt.cc - Video Editing Agency in Bangladesh",
         description: "Filmcutt is specializing in editing business ads, 2D/3D videos, and both horizontal and vertical video formats.",
         icon: "/filmcutt-landing-page.jpeg",
         category: "Full Stack Development",
@@ -78,7 +78,7 @@ const projects = [
         ]
     },
     {
-        name: "NextGen - Best NFT Marketplace for Web 3.0",
+        name: "NextGen - Best NFT Marketplace website for Web 3.0",
         description: "This project is just cloning from figma to react and tailwindcss. it's a static website.",
         icon: "/nft-landing-page.jpeg",
         category: "Frontend/Api intg.",
@@ -111,7 +111,7 @@ const projects = [
         type: "",
     }, 
     {
-        name: "Learning management System - Backend server",
+        name: "Learning management System - Nodejs Backend server",
         description: "A Lms backend system built with expressjs, typescript, redis and mongodb.",
         icon: "https://cdn.pixabay.com/photo/2023/02/09/18/42/podcast-7779510_1280.png",
         category: "Backend",

@@ -52,9 +52,9 @@ export default function ProjectCard({
 	const [hovered, setHovered] = useState(null);
 	return (
 		<Card
-			className="bg-green-950/5 w-[312px] md:w-auto shadow-none border border-yellow-50/5 flex flex-col-reverse gap-0 cursor-pointer group hover:-translate-y-1 transition md:py-2 pb-2 relative"
-			onMouseOver={e => setHovered(true)}
-			onMouseLeave={e => setHovered(false)}
+			className="w-[332px] md:w-full bg-green-950/5 shadow-none border border-yellow-50/5 flex flex-col-reverse gap-0 cursor-pointer group hover:-translate-y-1 transition md:py-2 pb-2 relative"
+			onMouseOver={() => setHovered(true)}
+			onMouseLeave={() => setHovered(false)}
 		>
 			<CardHeader className="pt-3 space-y-3">
 				<CardTitle className="capitalize leading-normal h-12">
@@ -64,19 +64,21 @@ export default function ProjectCard({
 					{description}
 				</CardDescription>
 
-				<Carousel className="isolate pt-2 w-full" setApi={setApi} plugins={[]}>
+				<Carousel className="isolate pt-2" setApi={setApi} plugins={[]}>
 					<CarouselContent className="-ml-4">
-						{techs.map((tech, i) => (
-							<CarouselItem key={i} className="basis-auto pl-4">
-								<Badge
-									className={`
+						{techs.map((tech, i) => {
+							return (
+								<CarouselItem key={i} className="basis-auto pl-4">
+									<Badge
+										className={`
 										bg-slate-700/50 py-2
 									`}
-								>
-									{tech}
-								</Badge>
-							</CarouselItem>
-						))}
+									>
+										{tech}
+									</Badge>
+								</CarouselItem>
+							);
+						})}
 					</CarouselContent>
 					{current > 1 && (
 						<CarouselPrevious className="left-0 z-10 hidden md:flex" />
