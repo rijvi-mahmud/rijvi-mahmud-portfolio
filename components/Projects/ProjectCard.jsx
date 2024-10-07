@@ -52,7 +52,7 @@ export default function ProjectCard({
 	const [hovered, setHovered] = useState(null);
 	return (
 		<Card
-			className="w-[332px] md:w-full bg-green-950/5 shadow-none border border-yellow-50/5 flex flex-col-reverse gap-0 cursor-pointer group hover:-translate-y-1 transition md:py-2 pb-2 relative"
+			className="w-[306px] md:w-full bg-green-950/5 shadow-none border border-yellow-50/5 flex flex-col-reverse gap-0 cursor-pointer group hover:-translate-y-1 transition md:py-2 pb-2 relative"
 			onMouseOver={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
 		>
