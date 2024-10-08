@@ -1,12 +1,12 @@
 const projects = [
     {
         name: "FridayMart - E-commerce platform for daily shopping",
-        description: "Hallochef is a food delivery system primarily operate from Bangkok, Thailand. Different continental food is available on hallochef",
+        description: "FridayMart is an ecommerce platform for daily shopping. It provides a platform for buying products from different categories.",
         icon: "/e-commerce.jpg",
         category: "Full Stack Development",
         links:{
-            github: "",
-            live: "https://hallochefco.com/"
+            github: "https://github.com/rijvi-mahmud/fridayMart",
+            live: ""
         } ,
         type: "Featured",
         priority: "1",
