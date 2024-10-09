@@ -97,7 +97,7 @@ export default async function TestRoute() {
 	// '../../mdx/test.mdx'
 
 	const content = await fs.readFile(
-		path.join(process.cwd(), 'mdx', 'test.mdx'),
+		path.join(process.cwd(), 'mdx', 'about.mdx'),
 		'utf8'
 	);
 
