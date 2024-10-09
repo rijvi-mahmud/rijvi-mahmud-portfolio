@@ -1,5 +1,5 @@
 'use client';
-import { formatNameForUrl } from '@/lib/utils';
+import { formatNameForUrl } from '@/lib/utils.js';
 import { ArrowRightIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import Link from 'next/link';

@@ -5,7 +5,7 @@ import {
 	TooltipTrigger,
 } from '@/components/ui/tooltip';
 import socialLinks from '@/data/socialLinks';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils.js';
 import Link from 'next/link';
 
 const SocialIcons = () => {

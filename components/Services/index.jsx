@@ -1,5 +1,5 @@
 import { services } from '@/data/services';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils.js';
 import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import SectionTitle from '../ui/sectionTitle';
 

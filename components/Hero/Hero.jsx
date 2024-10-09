@@ -5,7 +5,7 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils.js';
 import { EyeOpenIcon, PaperPlaneIcon } from '@radix-ui/react-icons';
 import localFont from 'next/font/local';
 import Link from 'next/link';

@@ -1,7 +1,7 @@
 'use client';
 import Logo from '@/components/ui/logo';
 import navItems from '@/data/menu';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils.js';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -10,7 +10,7 @@ const Navbar = () => {
 	const pathname = usePathname();
 	return (
 		<div className="sticky -top-2 h-24 sm:h-28 bg-gradient-to-b from-zinc-100 via-zinc-100/50 to-zinc-50/0 dark:bg-gradient-to-b dark:from-green-950/5 dark:via-green-950/5 dark:to-green-900/0 z-50 transition md:px-20">
-			<div className={cn('w-full text-zinc-400 px-8 md:px-20 pt-8')}>
+			<div className={cn('w-full text-zinc-400 px-4 md:px-20 pt-8')}>
 				<div className="flex items-center justify-between rounded-full py-4 backdrop-blur-lg dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit transition-all px-7 ">
 					<Logo />
 
