@@ -5,7 +5,7 @@ import SectionTitle from '../ui/sectionTitle';
 
 const Services = () => {
 	return (
-		<div className="py-20 px-12 md:px-24 flex flex-col space-y-24">
+		<div className="py-20 flex flex-col space-y-24">
 			<SectionTitle backgroundText="Services">What i do?</SectionTitle>
 			<div className="w-full">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-6">

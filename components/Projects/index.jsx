@@ -18,11 +18,11 @@ const Projects = () => {
 	};
 
 	return (
-		<div className="w-full lg:px-24 px-10  min-h-screen py-16 relative">
+		<div className="w-full min-h-screen py-16 relative">
 			<div className="pb-28 pt-10">
 				<SectionTitle backgroundText="featured">Featured Projects</SectionTitle>
 			</div>
-			<div className=" grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:px-12">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 				{projects.slice(0, visibleProjects).map(project => (
 					<ProjectCard
 						key={project.name}

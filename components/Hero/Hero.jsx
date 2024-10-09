@@ -30,7 +30,7 @@ const nunito = localFont({
 const Hero = () => {
 	return (
 		<>
-			<div className="w-full md:min-h-[82vh] px-10 flex flex-col gap-8 pt-5 md:pt-0 select-none lg:flex-row-reverse md:px-24 items-center justify-between">
+			<div className="w-full md:min-h-[82vh] flex flex-col gap-8 pt-5 md:pt-0 select-none lg:flex-row-reverse items-center justify-between">
 				<HeroImage />
 				<div className="w-full">
 					<div className="flex gap-5 md:gap-6 flex-col basis-1/2">
