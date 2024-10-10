@@ -4,7 +4,7 @@ import FooterMenu from './FooterMenu';
 
 const Footer = () => {
 	return (
-		<div className="w-ful lg:px-44 px-10 flex flex-col gap-10 pt-20">
+		<div className="w-ful lg:px-40 px-5 flex flex-col gap-10 pt-20">
 			<div className="w-10 bg-transparent">
 				<Logo className={'text-4xl [text-shadow:_0_1px_0_green]'} />
 			</div>

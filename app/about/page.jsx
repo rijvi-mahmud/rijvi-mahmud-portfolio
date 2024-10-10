@@ -21,6 +21,14 @@ const components = {
 			{props.children}
 		</h2>
 	),
+	h3: props => (
+		<h3
+			{...props}
+			className="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-4"
+		>
+			{props.children}
+		</h3>
+	),
 	p: props => (
 		<p
 			{...props}
@@ -100,15 +108,24 @@ export default async function About() {
 
 	const compiled = await compileMDX({
 		source: content,
+		components,
+		options: {
+			parseFrontmatter: true,
+		},
 	});
 	return (
-		<Container>
-			<h1 className="text-base text-red-300 mt-5" id="alert">
-				**About page is trying to implement mdx**
-			</h1>
+		<Container className={'mt-5'}>
 			<div className="w-full space-y-4">
-				<MDXRemote source={content} components={components} />
+				<MDXRemote
+					source={content}
+					components={components}
+					options={{
+						parseFrontmatter: true,
+					}}
+				/>
 			</div>
+			{/* <h1>{compiled.frontmatter.title}</h1>
+			<div className="w-full space-y-4">{compiled.content}</div> */}
 		</Container>
 	);
 }
