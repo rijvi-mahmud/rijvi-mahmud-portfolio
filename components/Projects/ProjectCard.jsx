@@ -64,7 +64,16 @@ export default function ProjectCard({
 					{description}
 				</CardDescription>
 
-				<Carousel className="isolate pt-2" setApi={setApi} plugins={[]}>
+				<Carousel
+					className="isolate pt-2"
+					setApi={setApi}
+					plugins={[]}
+					opts={{
+						snap: true,
+						snapAlign: 'start',
+						slidesToScroll: 3,
+					}}
+				>
 					<CarouselContent className="-ml-4">
 						{techs.map((tech, i) => {
 							return (
