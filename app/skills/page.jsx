@@ -1,11 +1,11 @@
-import Skills from '@/components/Skills'
-import React from 'react'
+import Skills from '@/components/Skills';
+import Container from '@/components/ui/Container';
 const SkillPage = () => {
-  return (
-    <div className='md:px-20 w-full'>
-        <Skills isHomePage={false}/>
-    </div>
-  )
-}
+	return (
+		<Container>
+			<Skills isHomePage={false} />
+		</Container>
+	);
+};
 
-export default SkillPage
+export default SkillPage;
