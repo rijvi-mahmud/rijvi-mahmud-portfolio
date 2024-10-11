@@ -29,6 +29,14 @@ const components = {
 			{props.children}
 		</h3>
 	),
+	h4: props => (
+		<h4
+			{...props}
+			className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-4"
+		>
+			{props.children}
+		</h4>
+	),
 	p: props => (
 		<p
 			{...props}
